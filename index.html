@@ -1,42 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Anna Ucero</title>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+            opacity: 0;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+    </style>
 </head>
 
-<body class="m-0 p-0">
+<body class="m-0 p-0 scroll-smooth">
 
-    <header class="bg-[#ffe4be] h-screen w-full relative overflow-hidden">
+    <header class="bg-gradient-to-br from-[#ffe4be] to-[#ffd19a] h-screen w-full relative overflow-hidden">
         <div class="flex h-full">
-            <div class="flex-1 flex flex-col justify-center px-12 z-10">
-                <h1 class="text-[#71593d] font-extrabold text-[6rem] mb-4">ANNA UCERO</h1>
-                <p class="text-[#71593d] font-bold text-[2rem] mb-8">Diseño y desarrollo web</p>
+            <div class="flex-1 flex flex-col justify-center px-16 z-10 max-w-4xl">
+                <h1
+                    class="text-[#71593d] font-extrabold text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
+                    ANNA UCERO</h1>
+                <p class="text-[#71593d] font-semibold text-[2rem] mb-12 opacity-90 animate-fade-in-up delay-100">Diseño
+                    y desarrollo web</p>
 
-                <nav class="flex gap-4 text-center">
-                    <div class="bg-[#71593d] p-3 text-[#f8f8f8] rounded cursor-pointer w-56 text-[1.5rem]">
-                        Experiencia</div>
-                    <div class="bg-[#71593d] p-3 text-[#f8f8f8] rounded cursor-pointer w-56 text-[1.5rem]">
-                        Proyectos</div>
-                    <div class="bg-[#71593d] p-3 text-[#f8f8f8] rounded cursor-pointer w-56 text-[1.5rem]">
-                        Formación</div>
+                <nav class="flex gap-5 animate-fade-in-up delay-200">
+                    <a href="#proyectos">
+                        <div
+                            class="bg-[#71593d] py-4 px-6 text-[#f8f8f8] rounded-xl cursor-pointer w-56 text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            Proyectos
+                        </div>
+                    </a>
+                    <a href="#formacion">
+                        <div
+                            class="bg-[#71593d] py-4 px-6 text-[#f8f8f8] rounded-xl cursor-pointer w-56 text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            Formación
+                        </div>
+                    </a>
+                    <div
+                        class="bg-[#71593d] py-4 px-6 text-[#f8f8f8] rounded-xl cursor-pointer w-56 text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                        Experiencia
+                    </div>
                 </nav>
             </div>
 
-            <img class="absolute top-0 right-0 h-full w-auto object-cover object-left" src="images/dibujo.png"
-                alt="Ilustración de Anna Ucero">
+            <img class="absolute top-0 right-0 h-full w-auto object-cover object-left opacity-95"
+                src="images/dibujo.png" alt="Ilustración de Anna Ucero">
 
-            <img src="images/svg/circle-down-regular-full.svg" alt="Flecha hacia abajo"
-                class="absolute bottom-8 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-70 animate-bounce" />
+            <a href="#main">
+                <img src="images/svg/circle-down-regular-full.svg" alt="Flecha hacia abajo"
+                    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
+            </a>
         </div>
     </header>
 
-    <main class="min-h-screen bg-white p-12">
-        <h2 class="text-[#71593d] font-bold text-3xl mb-4">Contenido Principal</h2>
-        <p class="text-gray-700">Aquí va el resto del contenido de la página...</p>
+    <main id="main">
+        <section id="proyectos" class="min-h-screen bg-[#f8f8f8] py-20 px-16 scroll-smooth">
+            <h2 class="text-[#71593d] font-extrabold mb-16 text-7xl tracking-tight">PROYECTOS</h2>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
+                <div class="group">
+                    <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-[#71593d]/10 hover:border-[#71593d]/30">
+                        <div class="relative overflow-hidden">
+                            <img src="images/engipractic.png" alt="Captura de pantalla del proyecto Engipractic"
+                                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#71593d]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="bg-[#71593d] p-5 group-hover:bg-[#5a4430] transition-colors duration-300">
+                            <p class="text-[#f8f8f8] text-2xl font-bold">engipractic.com</p>
+                            <p class="text-[#f8f8f8] mt-1 mb-2">Diseñé y desarrollé una página web funcional y visualmente atractiva utilizando WordPress.</p>
+                            <p class="text-[#f8f8f8] mb-3">Brindé asesoría a la empresa para elegir el servicio de hosting más eficiente y rentable.</p>
+                            <a href="https://engipractic.com/" target="_blank">
+                                <p class="text-[#f8f8f8]/80 text-xl mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Ver proyecto →</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="min-h-screen bg-[#ffe4be] py-20 px-16 scroll-smooth">
+            <h2 class="text-[#71593d] font-extrabold mb-16 text-7xl tracking-tight">FORMACIÓN</h2>
+        </section>
     </main>
 
 </body>
