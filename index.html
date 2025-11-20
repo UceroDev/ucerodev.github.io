@@ -44,44 +44,56 @@
 
     <header class="bg-gradient-to-br from-[#ffe4be] to-[#ffd19a] h-screen w-full relative overflow-hidden">
         <div class="flex h-full">
-            <div class="flex-1 flex flex-col justify-center px-16 z-10 max-w-4xl">
+            <div class="flex-1 flex flex-col justify-center px-8 md:px-16 z-10 max-w-4xl">
                 <h1
-                    class="text-[#71593d] font-extrabold text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
-                    ANNA UCERO</h1>
-                <p class="text-[#71593d] font-semibold text-[2rem] mb-12 opacity-90 animate-fade-in-up delay-100">Diseño
-                    y desarrollo web</p>
+                    class="text-[#71593d] font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
+                    ANNA UCERO
+                </h1>
+                <p
+                    class="text-[#71593d] font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[2rem] mb-8 md:mb-12 opacity-90 animate-fade-in-up delay-100">
+                    Diseño y desarrollo web
+                </p>
 
-                <nav class="flex gap-5 animate-fade-in-up delay-200">
-                    <a href="#proyectos">
+                <nav class="flex flex-col sm:flex-row gap-4 sm:gap-5 animate-fade-in-up delay-200">
+                    <a href="#proyectos" class="w-full sm:w-56">
                         <div
-                            class="bg-[#71593d] py-4 px-6 text-[#f8f8f8] rounded-xl cursor-pointer w-56 text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            class="bg-[#71593d] py-3 px-6 md:py-4 text-[#f8f8f8] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
                             Proyectos
                         </div>
                     </a>
-                    <a href="#formacion">
+                    <a href="#formacion" class="w-full sm:w-56">
                         <div
-                            class="bg-[#71593d] py-4 px-6 text-[#f8f8f8] rounded-xl cursor-pointer w-56 text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            class="bg-[#71593d] py-3 px-6 md:py-4 text-[#f8f8f8] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
                             Formación
                         </div>
                     </a>
-                    <div
-                        class="bg-[#71593d] py-4 px-6 text-[#f8f8f8] rounded-xl cursor-pointer w-56 text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
-                        Experiencia
-                    </div>
+                    <a href="#experiencia" class="w-full sm:w-56">
+                        <div
+                            class="bg-[#71593d] py-3 px-6 md:py-4 text-[#f8f8f8] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            Experiencia
+                        </div>
+                    </a>
                 </nav>
             </div>
 
-            <img class="absolute top-0 right-0 h-full w-auto object-cover object-left opacity-95"
+            <!-- Imagen de fondo - visible en desktop, fondo en móvil -->
+            <img class="hidden md:block absolute top-0 right-0 h-full w-auto object-cover object-left opacity-95"
                 src="images/dibujo.png" alt="Ilustración de Anna Ucero">
 
+            <!-- Imagen de fondo para móvil -->
+            <img class="md:hidden absolute inset-0 h-full w-full object-cover object-center opacity-20"
+                src="images/dibujo.png" alt="Ilustración de Anna Ucero">
+
+            <!-- Scroll -->
             <a href="#main">
                 <img src="images/svg/circle-down-regular-full.svg" alt="Flecha hacia abajo"
-                    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
+                    class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 h-10 w-10 md:h-12 md:w-12 opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
             </a>
         </div>
     </header>
 
     <main id="main">
+        <!-- PROYECTOS -->
         <section id="proyectos" class="min-h-screen bg-[#f8f8f8] py-20 px-16 scroll-smooth">
             <h2 class="text-[#71593d] font-extrabold mb-16 text-7xl tracking-tight">PROYECTOS</h2>
 
@@ -113,6 +125,7 @@
             </div>
         </section>
 
+        <!-- FORMACIÓN -->
         <section id="formacion" class="min-h-screen bg-[#ffe4be] py-20 px-16 scroll-smooth">
             <h2 class="text-[#71593d] font-extrabold mb-16 text-7xl tracking-tight">FORMACIÓN</h2>
 
@@ -168,6 +181,7 @@
         </section>
     </main>
 
+    <!-- Scroll hacia arriba -->
     <img src="images/svg/circle-up-regular-full.svg" alt="Flecha para subir" id="scrollToTop"
         class="fixed bottom-8 right-8 h-12 w-12 opacity-0 hover:opacity-100 transition-opacity cursor-pointer pointer-events-none"
         onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" />
