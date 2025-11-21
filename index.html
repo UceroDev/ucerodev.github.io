@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="colors.css">
     <title>Anna Ucero</title>
     <style>
         @keyframes fadeInUp {
@@ -42,34 +43,34 @@
 
 <body class="m-0 p-0 scroll-smooth">
 
-    <header class="bg-gradient-to-br from-[#ffe4be] to-[#ffd19a] h-screen w-full relative overflow-hidden">
+    <header class="bg-gradient-to-br from-[var(--marron-claro)] to-[#ffd19a] h-screen w-full relative overflow-hidden">
         <div class="flex h-full">
             <div class="flex-1 flex flex-col justify-center px-8 md:px-16 z-10 max-w-4xl">
                 <h1
-                    class="text-[#71593d] font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
+                    class="text-[var(--marron-muy-oscuro)] lg:text-[var(--marron-oscuro)] md:text-[var(--marron-muy-oscuro)] font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
                     ANNA UCERO
                 </h1>
                 <p
-                    class="text-[#71593d] font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[2rem] mb-8 md:mb-12 opacity-90 animate-fade-in-up delay-100">
+                    class="text-[var(--marron-muy-oscuro)] lg:text-[var(--marron-oscuro)] md:text-[var(--marron-muy-oscuro)] font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[2rem] mb-8 md:mb-12 opacity-90 animate-fade-in-up delay-100">
                     Diseño y desarrollo web
                 </p>
 
                 <nav class="flex flex-col sm:flex-row gap-4 sm:gap-5 animate-fade-in-up delay-200">
                     <a href="#proyectos" class="w-full sm:w-56">
                         <div
-                            class="bg-[#71593d] py-3 px-6 md:py-4 text-[#f8f8f8] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            class="bg-[var(--marron-muy-oscuro)] lg:bg-[var(--marron-oscuro)] md:bg-[var(--marron-muy-oscuro)] py-3 px-6 md:py-4 text-[var(--gris-muy-claro)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
                             Proyectos
                         </div>
                     </a>
                     <a href="#formacion" class="w-full sm:w-56">
                         <div
-                            class="bg-[#71593d] py-3 px-6 md:py-4 text-[#f8f8f8] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            class="bg-[var(--marron-muy-oscuro)] lg:bg-[var(--marron-oscuro)] md:bg-[var(--marron-muy-oscuro)] py-3 px-6 md:py-4 text-[var(--gris-muy-claro)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
                             Formación
                         </div>
                     </a>
                     <a href="#experiencia" class="w-full sm:w-56">
                         <div
-                            class="bg-[#71593d] py-3 px-6 md:py-4 text-[#f8f8f8] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            class="bg-[var(--marron-muy-oscuro)] lg:bg-[var(--marron-oscuro)] md:bg-[var(--marron-muy-oscuro)] py-3 px-6 md:py-4 text-[var(--gris-muy-claro)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
                             Experiencia
                         </div>
                     </a>
@@ -94,31 +95,36 @@
 
     <main id="main">
         <!-- PROYECTOS -->
-        <section id="proyectos" class="min-h-screen bg-[#f8f8f8] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
-            <h2 class="text-[#71593d] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">PROYECTOS</h2>
+        <section id="proyectos"
+            class="min-h-screen bg-[var(--gris-muy-claro)] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
+            <h2 class="text-[var(--marron-oscuro)] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">
+                PROYECTOS</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl">
                 <div class="group">
                     <div
-                        class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-[#71593d]/10 hover:border-[#71593d]/30">
+                        class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-[var(--marron-oscuro)]/10 hover:border-[var(--marron-oscuro)]/30">
                         <div class="relative overflow-hidden">
                             <img src="images/engipractic.png" alt="Captura de pantalla del proyecto Engipractic"
                                 class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-[#71593d]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                class="absolute inset-0 bg-gradient-to-t from-[var(--marron-oscuro)]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
                         </div>
-                        <div class="bg-[#71593d] p-5 group-hover:bg-[#5a4430] transition-colors duration-300">
-                            <p class="text-[#f8f8f8] text-xl md:text-2xl font-bold">engipractic.com</p>
-                            <p class="text-[#f8f8f8] text-sm md:text-base mt-1 mb-2">Diseñé y desarrollé una página web
+                        <div
+                            class="bg-[var(--marron-oscuro)] p-5 group-hover:bg-[#5a4430] transition-colors duration-300">
+                            <p class="text-[var(--gris-muy-claro)] text-xl md:text-2xl font-bold">engipractic.com</p>
+                            <p class="text-[var(--gris-muy-claro)] text-sm md:text-base mt-1 mb-2">Diseñé y desarrollé
+                                una página web
                                 funcional y
                                 visualmente atractiva utilizando WordPress.</p>
-                            <p class="text-[#f8f8f8] text-sm md:text-base mb-3">Brindé asesoría a la empresa para elegir
+                            <p class="text-[var(--gris-muy-claro)] text-sm md:text-base mb-3">Brindé asesoría a la
+                                empresa para elegir
                                 el servicio de
                                 hosting más eficiente y rentable.</p>
                             <a href="https://engipractic.com/" target="_blank">
                                 <p
-                                    class="text-[#f8f8f8]/80 text-lg md:text-xl mt-2 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                                    class="text-[var(--gris-muy-claro)] text-lg md:text-xl mt-2 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                                     Ver proyecto →</p>
                             </a>
                         </div>
@@ -128,19 +134,22 @@
         </section>
 
         <!-- FORMACIÓN -->
-        <section id="formacion" class="min-h-screen bg-[#ffe4be] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
-            <h2 class="text-[#71593d] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">FORMACIÓN</h2>
+        <section id="formacion"
+            class="min-h-screen bg-[var(--marron-claro)] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
+            <h2 class="text-[var(--marron-oscuro)] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">
+                FORMACIÓN</h2>
 
             <div class="flex flex-col gap-4 md:gap-6">
                 <div class="bg-white/40 backdrop-blur-sm p-5 md:p-8 rounded-2xl">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                         <div class="flex-1">
-                            <p class="text-2xl md:text-3xl font-bold text-[#71593d] mb-2 md:mb-3">
+                            <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 CFGS en Desarrollo de Aplicaciones Web</p>
-                            <p class="text-lg md:text-xl text-[#71593d]/80 font-semibold">📍 INS Nicolau Copèrnic</p>
+                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 INS
+                                Nicolau Copèrnic</p>
                         </div>
                         <div
-                            class="bg-[#71593d] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
+                            class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
                             2024 - Actualmente
                         </div>
                     </div>
@@ -149,17 +158,20 @@
                 <div class="bg-white/40 backdrop-blur-sm p-5 md:p-8 rounded-2xl">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                         <div class="flex-1">
-                            <p class="text-2xl md:text-3xl font-bold text-[#71593d] mb-2 md:mb-3">
+                            <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 CP Confección y publicación de páginas web</p>
-                            <p class="text-base md:text-lg text-[#71593d]/70 mb-1 md:mb-2">(IFCD0110_FOAP2023)</p>
-                            <p class="text-lg md:text-xl text-[#71593d]/80 font-semibold">📍 Foment de Terrassa</p>
+                            <p class="text-base md:text-lg text-[var(--marron-muy-oscuro)] mb-1 md:mb-2">
+                                (IFCD0110_FOAP2023)</p>
+                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 Foment de
+                                Terrassa</p>
                         </div>
                         <div class="flex flex-row md:flex-col items-start md:items-end gap-2">
                             <div
-                                class="bg-[#71593d] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap">
+                                class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap">
                                 2024
                             </div>
-                            <div class="bg-[#71593d]/80 text-white px-4 py-1 rounded-full font-medium text-xs">
+                            <div
+                                class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap">
                                 600 Horas
                             </div>
                         </div>
@@ -169,12 +181,13 @@
                 <div class="bg-white/40 backdrop-blur-sm p-5 md:p-8 rounded-2xl">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                         <div class="flex-1">
-                            <p class="text-2xl md:text-3xl font-bold text-[#71593d] mb-2 md:mb-3">
+                            <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 CFGM en Vídeo Disc-jockey y Sonido</p>
-                            <p class="text-lg md:text-xl text-[#71593d]/80 font-semibold">📍 IES Santa Eulàlia</p>
+                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 IES Santa
+                                Eulàlia</p>
                         </div>
                         <div
-                            class="bg-[#71593d] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
+                            class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
                             2021 - 2023
                         </div>
                     </div>
@@ -183,37 +196,41 @@
         </section>
 
         <!-- EXPERIENCIA -->
-        <section id="experiencia" class="min-h-screen bg-[#f8f8f8] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
-            <h2 class="text-[#71593d] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">EXPERIENCIA</h2>
+        <section id="experiencia"
+            class="min-h-screen bg-[var(--gris-muy-claro)] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
+            <h2 class="text-[var(--marron-oscuro)] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">
+                EXPERIENCIA</h2>
 
             <div class="flex flex-col gap-4 md:gap-6">
-                <div class="bg-[#ffe4be] backdrop-blur-sm p-5 md:p-8 rounded-2xl">
+                <div class="bg-[var(--marron-claro)] backdrop-blur-sm p-5 md:p-8 rounded-2xl">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                         <div class="flex-1">
-                            <p class="text-2xl md:text-3xl font-bold text-[#71593d] mb-2 md:mb-3">
+                            <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 Diseñadora y desarrolladora web con WordPress</p>
-                            <p class="text-lg md:text-xl text-[#71593d]/80 font-semibold">📍 Engipractic SL (contrato de
+                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍
+                                Engipractic SL (contrato de
                                 prácticas)
                             </p>
                         </div>
                         <div
-                            class="bg-[#71593d] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
+                            class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
                             oct. 2024 - nov. 2024
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-[#ffe4be] backdrop-blur-sm p-5 md:p-8 rounded-2xl">
+                <div class="bg-[var(--marron-claro)] backdrop-blur-sm p-5 md:p-8 rounded-2xl">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                         <div class="flex-1">
-                            <p class="text-2xl md:text-3xl font-bold text-[#71593d] mb-2 md:mb-3">
+                            <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 Editora de vídeo</p>
-                            <p class="text-lg md:text-xl text-[#71593d]/80 font-semibold">📍 MOLA TV SL (contrato de
+                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 MOLA TV SL
+                                (contrato de
                                 prácticas)
                             </p>
                         </div>
                         <div
-                            class="bg-[#71593d] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
+                            class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap self-start">
                             may. 2023 - jul. 2023
                         </div>
                     </div>
