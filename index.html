@@ -41,75 +41,71 @@
     </style>
 </head>
 
-<body class="m-0 p-0 scroll-smooth">
+<body class="m-0 p-0 scroll-smooth font-mono">
 
-    <header class="bg-gradient-to-br from-[var(--marron-claro)] to-[#ffd19a] h-screen w-full relative overflow-hidden">
+    <header class="h-screen w-full relative overflow-hidden bg-[var(--gris)]">
+        <nav
+            class="mt-4 justify-center absolute w-full flex flex-col sm:flex-row gap-4 sm:gap-5 animate-fade-in-up delay-200 z-20">
+            <a href="#proyectos" class="w-full sm:w-56">
+                <div
+                    class="py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
+                    Proyectos
+                </div>
+            </a>
+            <a href="#formacion" class="w-full sm:w-56">
+                <div
+                    class="py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
+                    Formación
+                </div>
+            </a>
+            <a href="#experiencia" class="w-full sm:w-56">
+                <div
+                    class=" py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
+                    Experiencia
+                </div>
+            </a>
+        </nav>
+
         <div class="flex h-full">
-            <div class="flex-1 flex flex-col justify-center px-8 md:px-16 z-10 max-w-4xl">
+            <div
+                class="flex-1 flex flex-col justify-center items-center text-center px-8 md:px-16 z-10 max-w-4xl mx-auto">
                 <h1
-                    class="text-[var(--marron-muy-oscuro)] lg:text-[var(--marron-oscuro)] md:text-[var(--marron-muy-oscuro)] font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
-                    ANNA UCERO
+                    class="text-[var(--blanco)] font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] mb-2 leading-tight animate-fade-in-up tracking-tight">
+                    Anna Ucero
                 </h1>
                 <p
-                    class="text-[var(--marron-muy-oscuro)] lg:text-[var(--marron-oscuro)] md:text-[var(--marron-muy-oscuro)] font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[2rem] mb-8 md:mb-12 opacity-90 animate-fade-in-up delay-100">
-                    Diseño y desarrollo web
+                    class="text-[var(--blanco)] font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[2rem] mb-8 md:mb-12 opacity-90 animate-fade-in-up delay-100">
+                    Desarrollo web y creación de contenido para redes sociales.
                 </p>
 
-                <nav class="flex flex-col sm:flex-row gap-4 sm:gap-5 animate-fade-in-up delay-200">
-                    <a href="#proyectos" class="w-full sm:w-56">
-                        <div
-                            class="bg-[var(--marron-muy-oscuro)] lg:bg-[var(--marron-oscuro)] md:bg-[var(--marron-muy-oscuro)] py-3 px-6 md:py-4 text-[var(--gris-muy-claro)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
-                            Proyectos
-                        </div>
-                    </a>
-                    <a href="#formacion" class="w-full sm:w-56">
-                        <div
-                            class="bg-[var(--marron-muy-oscuro)] lg:bg-[var(--marron-oscuro)] md:bg-[var(--marron-muy-oscuro)] py-3 px-6 md:py-4 text-[var(--gris-muy-claro)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
-                            Formación
-                        </div>
-                    </a>
-                    <a href="#experiencia" class="w-full sm:w-56">
-                        <div
-                            class="bg-[var(--marron-muy-oscuro)] lg:bg-[var(--marron-oscuro)] md:bg-[var(--marron-muy-oscuro)] py-3 px-6 md:py-4 text-[var(--gris-muy-claro)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:bg-[#5a4430] hover:scale-105 hover:shadow-xl transition-all duration-300">
-                            Experiencia
-                        </div>
-                    </a>
-                </nav>
-                <div class="flex gap-6 mt-8 animate-fade-in-up delay-300 lg:justify-start justify-center">
+                <div class="flex gap-6 mt-8 animate-fade-in-up delay-300 justify-center">
                     <a href="docs/CV 2 ANNA UCERO.pdf" target="_blank"
-                        class="flex items-center gap-2 text-[var(--marron-muy-oscuro)] lg:text-[var(--marron-oscuro)] md:text-[var(--marron-muy-oscuro)] hover:scale-110 transition-transform duration-300 group">
+                        class="flex items-center gap-2 text-[var(--blanco)] md:text-[var(--blanco)] hover:scale-110 transition-transform duration-300 group">
                         <img src="images/svg/file-solid-full.svg" alt="Icono de un fichero"
-                            class="h-6 w-6 md:h-7 md:w-7 opacity-80 group-hover:opacity-100">
-                        <span class="font-semibold text-base md:text-lg">Ver CV</span>
+                            class="h-6 w-6 md:h-7 md:w-7 filter brightness-0 invert opacity-80 group-hover:opacity-100">
+                        <span class="font-semibold text-base md:text-lg text-[var(--blanco)]">Ver CV</span>
                     </a>
 
                     <a href="https://github.com/UceroDev" target="_blank"
                         class="flex items-center hover:scale-110 transition-transform duration-300 group">
                         <img src="images/svg/github-brands-solid-full.svg" alt="Icono de GitHub"
-                            class="h-8 w-8 md:h-9 md:w-9 opacity-80 group-hover:opacity-100">
+                            class="h-8 w-8 md:h-9 md:w-9 filter brightness-0 invert opacity-80">
                     </a>
 
                     <a href="https://www.linkedin.com/in/anna-ucero-ferre-7a87a4266/" target="_blank"
                         class="flex items-center hover:scale-110 transition-transform duration-300 group">
                         <img src="images/svg/linkedin-brands-solid-full.svg" alt="Icono de Linkedin"
-                            class="h-8 w-8 md:h-9 md:w-9 opacity-80 group-hover:opacity-100">
+                            class="h-8 w-8 md:h-9 md:w-9 filter brightness-0 invert opacity-80">
                     </a>
                 </div>
 
             </div>
 
-            <!-- Imagen de fondo - visible en desktop, fondo en móvil -->
-            <img class="hidden md:block absolute top-0 right-0 h-full w-auto object-cover object-left opacity-95"
-                src="images/dibujo.png" alt="Ilustración de Anna Ucero">
-
-            <!-- Imagen de fondo para móvil -->
-            <img class="md:hidden absolute inset-0 h-full w-full object-cover object-center opacity-20"
-                src="images/dibujo.png" alt="Ilustración de Anna Ucero">
 
             <!-- Scroll -->
             <a href="#main">
                 <img src="images/svg/circle-down-regular-full.svg" alt="Flecha hacia abajo"
-                    class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 h-10 w-10 md:h-12 md:w-12 opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
+                    class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 h-10 w-10 md:h-12 md:w-12 filter brightness-0 invert opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
             </a>
         </div>
     </header>
@@ -118,7 +114,7 @@
         <!-- PROYECTOS -->
         <section id="proyectos"
             class="min-h-screen bg-[var(--gris-muy-claro)] py-12 md:py-20 px-6 md:px-16 scroll-smooth">
-            <h2 class="text-[var(--marron-oscuro)] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">
+            <h2 class="text-[var(--gris)] font-extrabold mb-8 md:mb-16 text-4xl md:text-7xl tracking-tight">
                 PROYECTOS</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl">
@@ -165,8 +161,10 @@
                         <div
                             class="bg-[var(--marron-oscuro)] p-5 group-hover:bg-[#5a4430] transition-colors duration-300">
                             <p class="text-[var(--gris-muy-claro)] text-xl md:text-2xl font-bold">Portfolio</p>
-                            <p class="text-[var(--gris-muy-claro)] text-sm md:text-base mt-1 mb-2">Diseñé y desarrollé este portfolio usando HTML, CSS y JavaScript.</p>
-                            <p class="text-[var(--gris-muy-claro)] text-sm md:text-base mt-1 mb-2">Para el CSS utilicé el framework <b>tailwind.</b></p>
+                            <p class="text-[var(--gris-muy-claro)] text-sm md:text-base mt-1 mb-2">Diseñé y desarrollé
+                                este portfolio usando HTML, CSS y JavaScript.</p>
+                            <p class="text-[var(--gris-muy-claro)] text-sm md:text-base mt-1 mb-2">Para el CSS utilicé
+                                el framework <b>tailwind.</b></p>
                             <a href="https://github.com/UceroDev/ucerodev.github.io" target="_blank">
                                 <p
                                     class="text-[var(--gris-muy-claro)] text-lg md:text-xl mt-2 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
@@ -190,7 +188,7 @@
                         <div class="flex-1">
                             <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 CFGS en Desarrollo de Aplicaciones Web</p>
-                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 INS
+                            <p class="text-lg md:text-xl text-[var(--gris)] font-semibold">📍 INS
                                 Nicolau Copèrnic</p>
                         </div>
                         <div
@@ -205,9 +203,9 @@
                         <div class="flex-1">
                             <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 CP Confección y publicación de páginas web</p>
-                            <p class="text-base md:text-lg text-[var(--marron-muy-oscuro)] mb-1 md:mb-2">
+                            <p class="text-base md:text-lg text-[var(--gris)] mb-1 md:mb-2">
                                 (IFCD0110_FOAP2023)</p>
-                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 Foment de
+                            <p class="text-lg md:text-xl text-[var(--gris)] font-semibold">📍 Foment de
                                 Terrassa</p>
                         </div>
                         <div class="flex flex-row md:flex-col items-start md:items-end gap-2">
@@ -228,7 +226,7 @@
                         <div class="flex-1">
                             <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 CFGM en Vídeo Disc-jockey y Sonido</p>
-                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 IES Santa
+                            <p class="text-lg md:text-xl text-[var(--gris)] font-semibold">📍 IES Santa
                                 Eulàlia</p>
                         </div>
                         <div
@@ -252,7 +250,7 @@
                         <div class="flex-1">
                             <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 Diseñadora y desarrolladora web con WordPress</p>
-                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍
+                            <p class="text-lg md:text-xl text-[var(--gris)] font-semibold">📍
                                 Engipractic SL (contrato de
                                 prácticas)
                             </p>
@@ -269,7 +267,7 @@
                         <div class="flex-1">
                             <p class="text-2xl md:text-3xl font-bold text-[var(--marron-oscuro)] mb-2 md:mb-3">
                                 Editora de vídeo</p>
-                            <p class="text-lg md:text-xl text-[var(--marron-muy-oscuro)] font-semibold">📍 MOLA TV SL
+                            <p class="text-lg md:text-xl text-[var(--gris)] font-semibold">📍 MOLA TV SL
                                 (contrato de
                                 prácticas)
                             </p>
