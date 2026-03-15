@@ -38,33 +38,41 @@
             animation-delay: 0.3s;
             opacity: 0;
         }
+
+        .text-shadow {
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 
 <body class="m-0 p-0 font-mono">
 
-    <header class="h-screen w-full relative overflow-hidden bg-[var(--gris)]">
-        <nav
-            class="mt-4 justify-center absolute w-full flex flex-col sm:flex-row gap-4 sm:gap-5 animate-fade-in-up delay-200 z-20">
-            <a href="#proyectos" class="w-full sm:w-56">
-                <div
-                    class="py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
-                    Proyectos
-                </div>
-            </a>
-            <a href="#formacion" class="w-full sm:w-56">
-                <div
-                    class="py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
-                    Formación
-                </div>
-            </a>
-            <a href="#experiencia" class="w-full sm:w-56">
-                <div
-                    class=" py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
-                    Experiencia
-                </div>
-            </a>
-        </nav>
+    <header class="h-screen w-full relative overflow-hidden bg-[url('images/foto-linkedin-bn.png')] bg-cover bg-center text-shadow">
+        <div class="absolute inset-0 bg-[rgba(128,128,128,0.70)]"></div>
+        <div class="mt-4 justify-center absolute w-full flex animate-fade-in-up delay-200 z-20">
+            <div class="relative flex flex-col sm:flex-row gap-4 sm:gap-5">
+                <nav class="flex flex-col sm:flex-row gap-4 sm:gap-5">
+                    <a href="#proyectos" class="w-full sm:w-56">
+                        <div
+                            class="py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
+                            Proyectos
+                        </div>
+                    </a>
+                    <a href="#formacion" class="w-full sm:w-56">
+                        <div
+                            class="py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
+                            Formación
+                        </div>
+                    </a>
+                    <a href="#experiencia" class="w-full sm:w-56">
+                        <div
+                            class=" py-3 px-6 md:py-4 text-[var(--blanco)] rounded-xl cursor-pointer text-lg md:text-[1.5rem] text-center font-semibold hover:scale-105 transition-all duration-300">
+                            Experiencia
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </div>
 
         <div class="flex h-full">
             <div
@@ -82,20 +90,20 @@
                     <a href="docs/CV 2 ANNA UCERO.pdf" target="_blank"
                         class="flex items-center gap-2 text-[var(--blanco)] md:text-[var(--blanco)] hover:scale-110 transition-transform duration-300 group">
                         <img src="images/svg/file-solid-full.svg" alt="Icono de un fichero"
-                            class="h-6 w-6 md:h-7 md:w-7 filter brightness-0 invert opacity-80 group-hover:opacity-100">
+                            class="h-6 w-6 md:h-7 md:w-7 filter brightness-0 invert opacity-90 group-hover:opacity-100">
                         <span class="font-semibold text-base md:text-lg text-[var(--blanco)]">Ver CV</span>
                     </a>
 
                     <a href="https://github.com/UceroDev" target="_blank"
                         class="flex items-center hover:scale-110 transition-transform duration-300 group">
                         <img src="images/svg/github-brands-solid-full.svg" alt="Icono de GitHub"
-                            class="h-8 w-8 md:h-9 md:w-9 filter brightness-0 invert opacity-80">
+                            class="h-8 w-8 md:h-9 md:w-9 filter brightness-0 invert opacity-90">
                     </a>
 
                     <a href="https://www.linkedin.com/in/anna-ucero-ferre-7a87a4266/" target="_blank"
                         class="flex items-center hover:scale-110 transition-transform duration-300 group">
                         <img src="images/svg/linkedin-brands-solid-full.svg" alt="Icono de Linkedin"
-                            class="h-8 w-8 md:h-9 md:w-9 filter brightness-0 invert opacity-80">
+                            class="h-8 w-8 md:h-9 md:w-9 filter brightness-0 invert opacity-90">
                     </a>
                 </div>
 
@@ -105,7 +113,7 @@
             <!-- Scroll -->
             <a href="#main">
                 <img src="images/svg/circle-down-regular-full.svg" alt="Flecha hacia abajo"
-                    class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 h-10 w-10 md:h-12 md:w-12 filter brightness-0 invert opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
+                    class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 h-10 w-10 md:h-12 md:w-12 filter brightness-0 invert opacity-90 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
             </a>
         </div>
     </header>
