@@ -118,16 +118,16 @@
                     PROYECTOS</h2>
                 <div class="flex justify-center items-center gap-4">
                     <p class="font-mono">filtrar por: </p>
-                    <button
-                        class="font-bold p-2 border border-[var(--gris)] bg-[var(--gris)] text-[var(--blanco)] hover:bg-[var(--blanco)] hover:text-[var(--gris)] transition-all shadow-2xl">web</button>
-                    <button
-                        class="font-bold p-2 border border-[var(--gris)] bg-[var(--gris)] text-[var(--blanco)] hover:bg-[var(--blanco)] hover:text-[var(--gris)] transition-all shadow-2xl">rrss</button>
+                    <button id="filter-web"
+                        class="font-bold p-2 border border-[var(--gris)] bg-[var(--gris)] text-[var(--blanco)] transition-all shadow-2xl">web</button>
+                    <button id="filter-rrss"
+                        class="font-bold p-2 border border-[var(--gris)] bg-[var(--blanco)] text-[var(--gris)] hover:bg-[var(--gris)] hover:text-[var(--blanco)] transition-all shadow-2xl">rrss</button>
                 </div>
             </div>
 
 
             <!-- - PROYECTOS - WEB. -->
-            <article>
+            <article id="projects-web">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl">
                     <div class="group">
                         <div
@@ -242,9 +242,25 @@
 
 
             <!-- - PROYECTOS - RRSS. -->
-            <article>
-                <div>
-                    <p class="text-[var(--blanco)] text-xl md:text-2xl font-bold">@adagedansa</p>
+            <article id="projects-rrss" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl hidden">
+                <div class="p-5 border-4 border-[var(--gris)] flex flex-col justify-center rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <p class="text-[var(--gris)] text-xl md:text-2xl font-bold mb-4">@adagedansa</p>
+                    <p>- Creación de contenido para Instagram: POSTS, STORIES.</p>
+                    <p>Febrero 2026 - Actualmente</p>
+                    <p class="mb-4">- Bajo la empresa <a href="https://acciondigital.es/" class="underline">Acción
+                            Digital</a>.</p>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/adagedansa/"
+                        data-instgrm-version="14"></blockquote>
+                </div>
+
+                <div class="p-5 border-4 border-[var(--gris)] flex flex-col justify-center rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <p class="text-[var(--gris)] text-xl md:text-2xl font-bold mb-4">@garatgemovil</p>
+                    <p>- Creación de contenido para Instagram: POSTS, STORIES.</p>
+                    <p>Marzo 2026 - Actualmente</p>
+                    <p class="mb-4">- Bajo la empresa <a href="https://acciondigital.es/" class="underline">Acción
+                            Digital</a>.</p>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/garatgemovil/"
+                        data-instgrm-version="14"></blockquote>
                 </div>
             </article>
         </section>
@@ -359,6 +375,8 @@
         onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" />
 
     <script src="scrollToTopBtn.js"></script>
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script src="rrss-web.js"></script>
 </body>
 
 </html>
