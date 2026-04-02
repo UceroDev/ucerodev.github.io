@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="colors.css" />
+    <title>Anna Ucero</title>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+            opacity: 0;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="h-screen w-full relative overflow-hidden bg-[var(--amarillo)]">
+        <nav class="group flex justify-center cursor-pointer">MENÚ
+            <ul class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 underline absolute mt-10 p-2 rounded">
+                <li class="py-1">PROYECTOS</li>
+                <li class="py-1">EXPERIENCIA</li>
+                <li class="py-1">FORMACIÓN</li>
+            </ul>
+        </nav>
+        <p class="">Anna Ucero</p>
+        <div class="flex items-center">
+            <h1>FRONT-END<br>DEVELOPER</h1>
+            <img src="images/svg/circle-chevron-down-solid-full.svg" alt="Flecha hacia abajo"
+                class="ml-4 h-10 w-10 md:h-12 md:w-12 filter opacity-80 animate-bounce cursor-pointer hover:opacity-100 transition-opacity animate-fade-in-up delay-300" />
+        </div>
+    </header>
+
+</body>
+
+</html>
