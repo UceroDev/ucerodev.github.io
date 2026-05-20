@@ -1,1 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+@import "../../../colors.css";
 @import "tailwindcss";
+
+@theme {
+    --font-erica-one: 'Erica One', serif;
+
+    /* version 2 colors */
+    --color-amarillo: var(--amarillo);
+    --color-blanco-grisaceo: var(--blanco-grisaceo);
+    --color-negro-grisaceo: var(--negro-grisaceo);
+
+    /* old colors */
+    --color-blanco: var(--blanco);
+    --color-gris: var(--gris);
+    --color-negro-puro: var(--negro-puro);
+    --color-blanco-puro: var(--blanco-puro);
+}
