@@ -1,7 +1,22 @@
 ---
 import Menu from "../components/Menu.astro";
 ---
-<header class="bg-[#FFF59E] relative min-h-screen overflow-hidden">
+
+<style>
+    @keyframes bg-animation {
+        0% {
+            background-position: left;
+        }
+        50% {
+            background-position: right;
+        }
+        100% {
+            background-position: left;
+        }
+    }
+
+</style>
+<header class="bg-size-[300%_300%] bg-linear-to-r from-[#FFF59E] via-[#FFD54F] to-[#FFB300] animate-[bg-animation_15s_infinite] relative min-h-screen overflow-hidden">
     <Menu />
 
     <div class="absolute bottom-1 left-1/2 -translate-x-1/2">
