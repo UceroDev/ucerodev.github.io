@@ -8,7 +8,7 @@ export interface Props {
 const { titulo, descripcion, imagen, url } = Astro.props;
 ---
 
-<a href={url} class="group block rounded-xl overflow-hidden shadow-lg bg-negro-grisaceo">
+<a href={url} class="group block rounded-xl overflow-hidden shadow-lg bg-negro-grisaceo hover:translate-y-3.5 transition">
   <img src={imagen} alt={titulo} class="w-full h-140 object-cover" />
   <div class="p-4">
     <h3 class="font-erica-one text-3xl text-blanco-grisaceo">{titulo}</h3>
