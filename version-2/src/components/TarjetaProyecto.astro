@@ -1,0 +1,17 @@
+---
+export interface Props {
+  titulo: string;
+  descripcion: string;
+  imagen: string;
+  url: string;
+}
+const { titulo, descripcion, imagen, url } = Astro.props;
+---
+
+<a href={url} class="group block rounded-xl overflow-hidden shadow-lg bg-negro-grisaceo">
+  <img src={imagen} alt={titulo} class="w-full h-140 object-cover" />
+  <div class="p-4">
+    <h3 class="font-erica-one text-3xl text-blanco-grisaceo">{titulo}</h3>
+    <p class="text-blanco-grisaceo">{descripcion}</p>
+  </div>
+</a>
