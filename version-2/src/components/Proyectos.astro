@@ -1,3 +1,21 @@
+---
+import TarjetaProyecto from "./TarjetaProyecto.astro";
+const proyectos = [
+  {
+    titulo: "Proyecto 1",
+    descripcion: "Descripción del proyecto 1",
+    imagen: "/ruta/imagen1.jpg",
+    url: "/proyectos/1",
+  },
+  {
+    titulo: "Proyecto 2",
+    descripcion: "Descripción del proyecto 2",
+    imagen: "/ruta/imagen2.jpg",
+    url: "/proyectos/2",
+  },
+];
+---
+
 <style>
   .text-stroke {
     -webkit-text-stroke: 5px #383838;
@@ -5,9 +23,16 @@
 </style>
 
 <section class="relative min-h-screen overflow-hidden bg-blanco-grisaceo">
-  <h2
-    class="text-[10rem] font-erica-one ml-16 mt-9 text-amarillo text-stroke"
-  >
-    PRO<br />YEC<br />TOS
-  </h2>
+  <div class="flex min-h-screen">
+    <h2
+      class="text-[12rem] font-erica-one ml-16 mt-9 text-amarillo text-stroke"
+    >
+      PRO<br />YEC<br />TOS
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 flex-1 min-w-0">
+      {proyectos.map((proyecto) => (
+        <TarjetaProyecto {...proyecto} />
+      ))}
+    </div>
+  </div>
 </section>
