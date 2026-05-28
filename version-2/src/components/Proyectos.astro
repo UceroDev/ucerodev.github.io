@@ -18,22 +18,16 @@ const proyectos = [
 
 <style>
   .text-stroke {
-    -webkit-text-stroke: 5px #383838;
+    -webkit-text-stroke: 3px #383838;
   }
 </style>
 
-<section class="relative h-screen overflow-hidden bg-blanco-grisaceo">
-  <div class="flex h-screen items-center">
-    <h2
-      class="text-[12rem] font-erica-one ml-16 text-amarillo text-stroke"
-    >
-      PRO<br />YEC<br />TOS
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 flex-1 min-w-0">
-      {proyectos.map((proyecto) => (
-        <TarjetaProyecto {...proyecto} />
-      ))}
-    </div>
+<section
+  class="relative h-screen overflow-hidden bg-blanco-grisaceo flex flex-col items-center justify-center gap-10"
+>
+  <h2 class="text-8xl font-erica-one text-amarillo text-stroke">PROYECTOS</h2>
+
+  <div class="flex gap-6 px-8 w-full justify-center">
+    {proyectos.map((proyecto) => <TarjetaProyecto {...proyecto} />)}
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100px" fill="#FFF59E" class="absolute bottom-8 right-8 hover:scale-110 transition" stroke="#383838" stroke-width="15"><path d="M0 256a256 256 0 1 0 512 0 256 256 0 1 0 -512 0zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
 </section>
