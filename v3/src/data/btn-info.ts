@@ -1,37 +1,42 @@
+import folderIcon from "../assets/images/folder.png";
+import githubIcon from "../assets/svg/github-logo.svg";
+import linkedinIcon from "../assets/svg/linkedin-logo.svg";
+import cvIcon from "../assets/svg/cv-icon.svg";
+
 export const buttons = [
   {
-    icono: "../assets/images/folder.png",
+    icono: folderIcon.src,
     titulo: "Proyectos",
     url: "",
   },
   {
-    icono: "../assets/images/folder.png",
+    icono: folderIcon.src,
     titulo: "Formación",
     url: "",
   },
   {
-    icono: "../assets/images/folder.png",
+    icono: folderIcon.src,
+    titulo: "Diseño",
+    url: "",
+  },
+  {
+    icono: folderIcon.src,
     titulo: "Sobre mi",
     url: "",
   },
   {
-    icono: "../assets/images/folder.png",
-    titulo: "Diseños",
-    url: "",
-  },
-  {
-    icono: "../assets/svg/github-logo-svg",
+    icono: githubIcon.src,
     titulo: "GitHub",
     url: "https://github.com/UceroDev",
   },
   {
-    icono: "../assets/svg/linkedin-logo-svg",
-    titulo: "Linkedin",
+    icono: linkedinIcon.src,
+    titulo: "LinkedIn",
     url: "https://www.linkedin.com/in/anna-ucero-ferre-7a87a4266/",
   },
   {
-    icono: "../assets/svg/cv-icon.svg",
+    icono: cvIcon.src,
     titulo: "Currículum",
-    url: "https://www.linkedin.com/in/anna-ucero-ferre-7a87a4266/",
+    url: "...",
   },
 ];
