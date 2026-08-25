@@ -1,0 +1,12 @@
+---
+import { buttons } from '../data/btn-info.ts';
+import { socials } from '../data/social-info.ts';
+
+import BtnFolders from "../components/BtnFolders.astro"
+---
+  
+<section class="relative h-screen overflow-hidden">
+    <div class="">
+      {buttons.map((button) => <BtnFolders {...button} />)}
+    </div>
+</section>
