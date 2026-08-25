@@ -7,15 +7,18 @@ export const socials = [
     icono: githubIcon.src,
     titulo: "GitHub",
     url: "https://github.com/UceroDev",
+    posicion: "left-[76%] top-[40%]",
   },
   {
     icono: linkedinIcon.src,
     titulo: "LinkedIn",
-    url: "https://www.linkedin.com/in/anna-ucero-ferre-7a87a4266/",
+    url: "...",
+    posicion: "left-[76%] top-[18%]",
   },
   {
     icono: cvIcon.src,
     titulo: "Currículum",
     url: "...",
+    posicion: "left-[76%] top-[66%]",
   },
 ];
