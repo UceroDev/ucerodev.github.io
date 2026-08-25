@@ -1,6 +1,6 @@
 import githubIcon from "../assets/svg/github-logo.svg";
 import linkedinIcon from "../assets/svg/linkedin-logo.svg";
-import cvIcon from "../assets/svg/cv-icon.svg";
+import cvIcon from "../assets/images/file-icon.png";
 
 export const socials = [
   {
