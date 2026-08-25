@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import windowsBackground from "../assets/images/windows-background.webp";
+
+const { title = "Anna Ucero" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+<body
+  class="min-h-screen bg-cover bg-bottom bg-no-repeat"
+  style={`background-image: url(${windowsBackground.src});`}
+>
+  <slot />
+</body>
+</html>
