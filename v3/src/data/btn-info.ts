@@ -1,4 +1,4 @@
-export const proyectos = [
+export const buttons = [
   {
     icono: "../assets/images/folder.png",
     titulo: "Proyectos",
