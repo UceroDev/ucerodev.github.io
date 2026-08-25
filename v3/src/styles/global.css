@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.desktop-button-label {
+  margin-top: 0.25rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000, 0 0 2px #000;
+}
