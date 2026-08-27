@@ -1,19 +1,34 @@
 ---
 export interface Props {
+  tipo: string;
   titulo: string;
   icono: string;
   url?: string;
+  modalId?: string;
   posicion: string;
 }
-const { titulo, icono, url, posicion } = Astro.props;
+const { tipo, titulo, icono, url, modalId, posicion } = Astro.props;
 ---
 
 <div class:list={["absolute w-40 -translate-x-1/2 -translate-y-1/2", posicion]}>
-  <a
-    href={url}
-    class="flex w-full flex-col items-center rounded-sm px-1 py-1 text-center hover:bg-[#ffffff49] focus-visible:outline-1 focus-visible:outline-white"
-  >
-    <img src={icono} class="w-26" />
-    <h2 class="desktop-button-label">{titulo}</h2>
-  </a>
+  {
+    tipo === "modal" ? (
+      <button
+        type="button"
+        data-modal-open={modalId}
+        class="flex w-full flex-col items-center rounded-sm px-1 py-1 text-center hover:bg-[#ffffff49]"
+      >
+        <img src={icono} class="w-26" alt="" />
+        <h2 class="desktop-button-label">{titulo}</h2>
+      </button>
+    ) : (
+      <a
+        href={url}
+        class="flex w-full flex-col items-center rounded-sm px-1 py-1 text-center hover:bg-[#ffffff49]"
+      >
+        <img src={icono} class="w-26" alt="" />
+        <h2 class="desktop-button-label">{titulo}</h2>
+      </a>
+    )
+  }
 </div>
