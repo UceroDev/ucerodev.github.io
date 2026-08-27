@@ -23,7 +23,7 @@ const { tipo, titulo, icono, url, modalId, posicion } = Astro.props;
       </button>
     ) : (
       <a
-        href={url}
+        href={url} target="_blank"
         class="flex w-full flex-col items-center rounded-sm px-1 py-1 text-center hover:bg-[#ffffff49]"
       >
         <img src={icono} class="w-26" alt="" />
