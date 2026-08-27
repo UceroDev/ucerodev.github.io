@@ -14,14 +14,14 @@ export const socials = [
     tipo: "link",
     icono: linkedinIcon.src,
     titulo: "LinkedIn",
-    url: "...",
+    url: "https://www.linkedin.com/in/anna-ucero-ferre-7a87a4266/",
     posicion: "left-[76%] top-[18%]",
   },
   {
     tipo: "link",
     icono: cvIcon.src,
     titulo: "Currículum",
-    url: "...",
+    url: "https://drive.google.com/file/d/1CEUuMvGEK8xv3HtxtTRGS9maFcqqKPOz/view?usp=sharing",
     posicion: "left-[76%] top-[66%]",
   },
 ];
