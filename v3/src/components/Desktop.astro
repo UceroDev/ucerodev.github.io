@@ -1,19 +1,29 @@
 ---
-import { buttons } from '../data/btn-info.ts';
-import { socials } from '../data/social-info.ts';
+import { buttons } from "../data/btn-info.ts";
+import { socials } from "../data/social-info.ts";
 
-import DesktopButtons from "../components/DesktopButtons.astro"
+import DesktopButtons from "../components/DesktopButtons.astro";
+
+import TextWindow from "./windows/TextWindow.astro";
+import About from "./content/About.astro";
 ---
-  
+
 <section class="relative h-screen overflow-hidden">
-    <nav>
-        <div class="">
-          {buttons.map((button) => <DesktopButtons {...button} />)}
-        </div>
-    
-        <div>
-            {socials.map((socialLink) => <DesktopButtons {...socialLink} />)}
-        </div>
-    </nav>
-    
+  <nav>
+    <div class="">
+      {buttons.map((button) => <DesktopButtons {...button} />)}
+    </div>
+
+    <div>
+      {socials.map((socialLink) => <DesktopButtons {...socialLink} />)}
+    </div>
+  </nav>
+
+  <TextWindow id="sobre-mi-window">
+    <About />
+  </TextWindow>
 </section>
+
+<script>
+  import "./scripts/desktopWindow.ts";
+</script>
