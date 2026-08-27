@@ -6,11 +6,14 @@ import DesktopButtons from "../components/DesktopButtons.astro"
 ---
   
 <section class="relative h-screen overflow-hidden">
-    <div class="">
-      {buttons.map((button) => <DesktopButtons {...button} />)}
-    </div>
-
-    <div>
-        {socials.map((socialLink) => <DesktopButtons {...socialLink} />)}
-    </div>
+    <nav>
+        <div class="">
+          {buttons.map((button) => <DesktopButtons {...button} />)}
+        </div>
+    
+        <div>
+            {socials.map((socialLink) => <DesktopButtons {...socialLink} />)}
+        </div>
+    </nav>
+    
 </section>
