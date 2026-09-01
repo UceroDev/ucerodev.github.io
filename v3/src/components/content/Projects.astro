@@ -1,0 +1,22 @@
+---
+import { projects } from "../../data/projects-info";
+---
+
+<div class="flex flex-wrap gap-6">
+    {
+      projects.map(({ proyecto, tecnologias, foto }) => (
+        <div class="w-72">
+          <img
+            src={foto.src}
+            alt="Captura de pantalla de la página de inicio de un proyecto."
+            class="w-72 rounded-md border-gray-300 border"
+          />
+    
+          <div class="flex flex-col items-center">
+            <h2 class="text-lg font-semibold text-gray-800">{proyecto}</h2>
+            <p class="text-sm text-gray-500">{tecnologias}</p>
+          </div>
+        </div>
+      ))
+    }
+</div>
