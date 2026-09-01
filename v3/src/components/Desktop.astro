@@ -6,6 +6,9 @@ import DesktopButtons from "../components/DesktopButtons.astro";
 
 import TextWindow from "./windows/TextWindow.astro";
 import About from "./content/About.astro";
+
+import FolderWindow from "./windows/FolderWindow.astro";
+import Projects from "./content/Projects.astro";
 ---
 
 <section class="relative h-screen overflow-hidden">
@@ -22,6 +25,10 @@ import About from "./content/About.astro";
   <TextWindow id="sobre-mi-window">
     <About />
   </TextWindow>
+
+  <FolderWindow id="proyectos-window" titulo="Proyectos">
+    <Projects />
+  </FolderWindow>
 </section>
 
 <script>
