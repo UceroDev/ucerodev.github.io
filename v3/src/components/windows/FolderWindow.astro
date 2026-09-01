@@ -1,0 +1,32 @@
+---
+export interface Props {
+  id: string;
+  titulo: string;
+}
+
+const { id, titulo } = Astro.props;
+
+import icono from "../../assets/images/folder.png";
+---
+
+<dialog id={id} class="w-[40%] h-[50%] m-auto p-0 rounded-xl overflow-hidden">
+  <div
+    class="flex justify-between items-center px-4 py-3 bg-linear-to-r from-orange-50 to-sky-100"
+  >
+    <div class="flex items-center gap-2">
+      <img src={icono.src} alt="Icono de notas" class="w-5" />
+      <p class="font-medium text-gray-800">{titulo}</p>
+    </div>
+    <button
+      type="button"
+      data-modal-close
+      class="cursor-pointer text-gray-500 hover:bg-red-400 hover:text-white transition w-8 h-6 flex items-center justify-center text-sm"
+    >
+      ✕
+    </button>
+  </div>
+
+  <div class="p-4">
+    <slot />
+  </div>
+</dialog>
