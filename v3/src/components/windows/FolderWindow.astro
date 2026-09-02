@@ -9,9 +9,12 @@ const { id, titulo } = Astro.props;
 import icono from "../../assets/images/folder.png";
 ---
 
-<dialog id={id} class="w-[60%] h-[70%] m-auto p-0 rounded-xl overflow-hidden">
+<dialog
+  id={id}
+  class="hidden open:flex flex-col w-[60%] h-[70%] m-auto p-0 rounded-xl overflow-hidden"
+>
   <div
-    class="flex justify-between items-center px-4 py-3 bg-linear-to-r from-orange-50 to-sky-100"
+    class="flex justify-between items-center px-4 py-3 bg-linear-to-r from-orange-50 to-sky-100 shrink-0"
   >
     <div class="flex items-center gap-2">
       <img src={icono.src} alt="Icono de notas" class="w-5" />
@@ -26,7 +29,7 @@ import icono from "../../assets/images/folder.png";
     </button>
   </div>
 
-  <div class="p-4">
+  <div class="p-4 overflow-y-auto">
     <slot />
   </div>
 </dialog>
